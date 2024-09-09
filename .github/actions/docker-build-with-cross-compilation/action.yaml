@@ -36,7 +36,7 @@ runs:
         mkdir src
         vcs import src < autoware.repos
       shell: bash
-    
+
     - name: Setup QEMU for cross-compilation if required
       if: ${{ inputs.platform == 'arm64' }}
       uses: docker/setup-qemu-action@v3
