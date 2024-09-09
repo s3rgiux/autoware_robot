@@ -227,7 +227,7 @@ runs:
         set: |
           ${{ inputs.build-args }}
         output: type=image,push=false
-        
+
     - name: Push cache
       run: |
         docker push ghcr.io/${{ github.repository }}-buildcache:${{ inputs.name }}-${{ inputs.platform }}-${{ github.ref_name }}
