@@ -18,8 +18,10 @@ jobs:
       fail-fast: false
       matrix:
         name:
-          - no-cuda
-          - cuda
+          - amd64-no-cuda
+          - amd64-cuda
+          - arm64-no-cuda
+          - arm64-cuda
         include:
           - name: amd64-no-cuda
             platform: amd64
